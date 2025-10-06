@@ -16,8 +16,8 @@
         {
             "id": "csvPath",
             "type": "promptString",
-            "description": "Đường dẫn đến tệp CSV chứa các cột 'sat' và 'colgpa'",
-            "default": "path/to/data.csv"
+            "description": "Nhập đường dẫn tới tệp CSV (ví dụ: C:/Users/ban/Documents/dataset.csv)",
+            "default": ""
         }
     ]
 }

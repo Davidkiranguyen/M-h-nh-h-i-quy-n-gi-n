@@ -17,7 +17,7 @@ pip install pandas scikit-learn
 1. Mở thư mục dự án trong VS Code.
 2. Đảm bảo đã cài đặt tiện ích mở rộng **Python** của Microsoft.
 3. Mở tab **Run and Debug** (hoặc nhấn `Ctrl+Shift+D`) và chọn cấu hình **Run regression.py**.
-4. Nhấn **Start Debugging** (`F5`). VS Code sẽ yêu cầu bạn nhập đường dẫn tới tệp CSV chứa dữ liệu với hai cột bắt buộc: `sat` và `colgpa`.
+4. Nhấn **Start Debugging** (`F5`). VS Code sẽ yêu cầu bạn nhập đường dẫn tới tệp CSV chứa dữ liệu với hai cột bắt buộc: `sat` và `colgpa`. Hãy nhập đường dẫn đến tệp của chính bạn (ví dụ: `C:/Users/ban/Documents/dataset.csv`).
 5. Sau khi cung cấp đường dẫn và nhấn Enter, script sẽ chạy trong terminal tích hợp của VS Code.
 
 Nếu một trong hai cột bị thiếu, chương trình sẽ hiển thị thông báo lỗi mô tả rõ cột nào còn thiếu.
@@ -30,10 +30,14 @@ Bạn cũng có thể chạy script trong terminal nếu muốn:
 python regression.py path/to/data.csv
 ```
 
-### Ví dụ
+Nếu bạn không truyền đối số đường dẫn, script sẽ hỏi trực tiếp trong terminal:
 
 ```bash
-python regression.py data/college_scores.csv
+python regression.py
+```
+
+```
+Enter the path to the CSV file: /duong/dan/toi/du-lieu.csv
 ```
 
 Đầu ra bao gồm hệ số chặn, hệ số góc (slope), hệ số xác định R² và một diễn giải ngắn gọn về ý nghĩa của hệ số góc.

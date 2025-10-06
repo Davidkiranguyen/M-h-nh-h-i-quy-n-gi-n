@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run regression.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/regression.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:csvPath}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "csvPath",
+            "type": "promptString",
+            "description": "Đường dẫn đến tệp CSV chứa các cột 'sat' và 'colgpa'",
+            "default": "path/to/data.csv"
+        }
+    ]
+}

@@ -12,13 +12,23 @@ pip install pandas scikit-learn
 
 ## Sử dụng
 
-Chạy mô hình bằng cách cung cấp đường dẫn tới tệp CSV chứa dữ liệu với hai cột bắt buộc: `sat` và `colgpa`.
+### Chạy trực tiếp trong VS Code
+
+1. Mở thư mục dự án trong VS Code.
+2. Đảm bảo đã cài đặt tiện ích mở rộng **Python** của Microsoft.
+3. Mở tab **Run and Debug** (hoặc nhấn `Ctrl+Shift+D`) và chọn cấu hình **Run regression.py**.
+4. Nhấn **Start Debugging** (`F5`). VS Code sẽ yêu cầu bạn nhập đường dẫn tới tệp CSV chứa dữ liệu với hai cột bắt buộc: `sat` và `colgpa`.
+5. Sau khi cung cấp đường dẫn và nhấn Enter, script sẽ chạy trong terminal tích hợp của VS Code.
+
+Nếu một trong hai cột bị thiếu, chương trình sẽ hiển thị thông báo lỗi mô tả rõ cột nào còn thiếu.
+
+### Chạy bằng dòng lệnh
+
+Bạn cũng có thể chạy script trong terminal nếu muốn:
 
 ```bash
 python regression.py path/to/data.csv
 ```
-
-Nếu một trong hai cột bị thiếu, chương trình sẽ hiển thị thông báo lỗi mô tả rõ cột nào còn thiếu.
 
 ### Ví dụ
 
